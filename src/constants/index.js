@@ -1,4 +1,4 @@
-import { pic2, pic3, pic4 } from '../assets'
+import { pic2, pic3, pic4,pic5 } from '../assets'
 export const navLinks = [
     {
         id: "portfolio",
@@ -69,3 +69,10 @@ export const news = [
         img: pic4
     }
 ]
+export const connectionsData = {
+    title: "It is all about connections",
+    desc1: "Logistics real estate connects products with the people who need them. Link connects businesses with the warehouse spaces they need to make it all happen—helping its customers grow all along the way.",
+    title2: "We will get you there",
+    desc2: "Link owns the largest portfolio of U.S.-only industrial real estate. Our scale is expansive, our technology is leading-edge and our people are talented contributors who bring a passion for what we do",
+    img: pic5
+}
