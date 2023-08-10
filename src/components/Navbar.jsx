@@ -1,4 +1,3 @@
-//import React from 'react'
 import { linklogoblack, search, arrowDown, menu, close } from "../assets"
 import { navLinks } from '../constants'
 import { useState } from 'react'
@@ -8,6 +7,7 @@ const Navbar = () => {
 
     const [hovering, setHovering] = useState(false)
     const [toggle, setToggle] = useState(false)
+    const [id, setID] = useState()
 
     return (
         <div>
@@ -20,18 +20,22 @@ const Navbar = () => {
                         {navLinks.map((nav, index) => (
                             <li key={nav.id}
                                 className={`font-normal cursor-pointer text-[16px] tracking-widest ${index === navLinks.length - 1 ? 'mr-0' : 'mr-[25px]'}`}
-                                onMouseOver={() => (setHovering(true))}
+                                onMouseOver={() => {
+                                    setHovering(true)
+                                    setID(nav.id)
+                                }}
                                 onMouseOut={() => setHovering(false)}
                             >
                                 <div className='flex place-items-center '>
-                                    <a href={`#${nav.id}`}>
+                                    <a href={`#${nav.id}`}
+                                        className="hover:text-[#C45508]">
                                         {nav.title}
                                     </a>
                                     <img src={arrowDown} alt='arrow'
-                                        className='h-[10px] ml-[4px]'
+                                        className={` h-[10px] ml-[4px] ${nav.subLinks.length !== 0 ? 'flex' : 'hidden'}`}
                                     />
                                 </div>
-                                <div className={`${hovering == true ? 'flex' : 'hidden'} `}>
+                                <div className={`${hovering == true && nav.id == id && nav.subLinks.length !== 0 ? 'flex' : 'hidden'} `}>
 
                                     <ul className='bg-white w-[150px] p-5 absolute'>
                                         {nav.subLinks.map((link) => (
