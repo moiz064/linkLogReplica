@@ -2,7 +2,7 @@ import React from 'react'
 import { background } from '../assets'
 
 const Hero = () => (
-  <div className='relative flex mx-[20px] h-[650px] rounded-bl-[100px]'
+  <div className='relative flex mx-[20px] h-[650px] rounded-bl-[120px]'
     style={{ backgroundImage: `url(${background})` }}
   >
     <div className='absolute bottom-[20%] left-[5%]'>
