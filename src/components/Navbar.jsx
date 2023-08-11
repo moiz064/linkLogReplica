@@ -10,8 +10,8 @@ const Navbar = () => {
     const [id, setID] = useState()
 
     return (
-        <div>
-            <div className='w-full bg-[#96b7c0] shadow-md'>
+        <div >
+            <div className='w-full bg-[#96b7c0]'>
                 <nav className='flex py-4 px-[10%] justify-between items-center navbar h-[70px] '>
                     <img src={linklogoblack} alt="logo"
                         className='w-[125px]'
@@ -62,7 +62,7 @@ const Navbar = () => {
                 </nav>
 
             </div>
-            <div className={`${toggle ? 'flex' : 'hidden'} bg-[#96b7c0] h-full w-full relative`}>
+            <div className={`${toggle ? 'flex' : 'hidden'} bg-[#96b7c0] h-full w-full relative z-10`}>
                 <ul className='p-[40px]'>
                     {navLinks.map((nav) => (
                         <li key={nav.id}

@@ -18,6 +18,14 @@ import search from './search.png'
 import background from './background.jpg'
 import menu from './menu.png'
 import close from './close.png'
+import linklogogold from './link-logo-cardboard.svg'
+import instagram from './instagram-cardboard.svg'
+import facebook from './facebook-cardboard.svg'
+import linkedin from './linkedin-cardboard.svg'
+import twitter from './twitter-cardboard.svg'
+import youtube from './youtube-cardboard.svg'
+
+
 
 export {
     arrowgold,
@@ -40,4 +48,10 @@ export {
     background,
     menu,
     close,
+    linklogogold,
+    instagram,
+    facebook,
+    linkedin,
+    twitter,
+    youtube,
 }
