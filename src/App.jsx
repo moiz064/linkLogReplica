@@ -9,6 +9,7 @@ import Stats from './components/Stats'
 import RegCards from './components/RegCards'
 import Info from './components/Info'
 import Footer from './components/Footer'
+import NewsBar from './components/NewsBar'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <Stats />
       <RegCards />
       <Info />
+      <NewsBar />
       <Footer />
     </div>
   )
