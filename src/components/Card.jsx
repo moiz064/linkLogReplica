@@ -1,5 +1,4 @@
 import React from 'react'
-import { news } from '../constants'
 
 const Card = ({img,title,desc}) => (
     <div className='mx-10'>

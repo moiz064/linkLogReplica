@@ -1,4 +1,4 @@
-import { pic2, pic3, pic4,pic5,pic6,pic7,pic8,pic9,pic10 } from '../assets'
+import { pic2, pic3, pic4,pic5,pic6,pic7,pic8,pic9,pic10, pic12, pic11, pic13, pic14 } from '../assets'
 export const navLinks = [
     {
         id: "portfolio",
@@ -69,6 +69,7 @@ export const news = [
         img: pic4
     }
 ]
+
 export const connectionsData = {
     title: "It is all about connections",
     desc1: "Logistics real estate connects products with the people who need them. Link connects businesses with the warehouse spaces they need to make it all happen—helping its customers grow all along the way.",
@@ -119,3 +120,39 @@ export const bannersData = [
         curveLoc:'bottom',
     },
 ]
+export const stats = [
+    {stat: "1000+",
+    title: "employees throughout the U.S."},
+    {stat: "25",
+    title: "offices in key markets across the U.S."},
+    {stat: "545M",
+    title: "square feet of logistics real estate"},
+    {stat: "3500+",
+    title: "properties"},
+]
+export const regions = [
+    {
+        title: "EAST REGION",
+        stat1: "188,411,000",
+        stat2: "1,243",
+        img: pic11
+    },
+    {
+        title: "CENTRAL REGION",
+        stat1: "183,182,000",
+        stat2: "1,089",
+        img: pic12
+    },
+    {
+        title: "WEST REGION",
+        stat1: "143,081,000",
+        stat2: "1,111",
+        img: pic13
+    }
+]
+export const info = {
+    img: pic14,
+    title: "Our space is your space",
+    desc: "Link invites charities, nonprofits and philanthropic organizations across the country to utilize our warehouse space in order to help them continue the critical work they do.",
+    btnName: "LEARN MORE",
+}
