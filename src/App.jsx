@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import NewsCard from './components/NewsCard'
 import Connections from './components/Connections'
 import LinkReport from './components/LinkReport'
+import Banners from './components/Banners'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <NewsCard />
       <Connections />
       <LinkReport />
+      <Banners />
     </div>
   )
 }

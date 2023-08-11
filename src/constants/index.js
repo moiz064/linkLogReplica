@@ -1,4 +1,4 @@
-import { pic2, pic3, pic4,pic5 } from '../assets'
+import { pic2, pic3, pic4,pic5,pic6,pic7,pic8,pic9,pic10 } from '../assets'
 export const navLinks = [
     {
         id: "portfolio",
@@ -76,3 +76,46 @@ export const connectionsData = {
     desc2: "Link owns the largest portfolio of U.S.-only industrial real estate. Our scale is expansive, our technology is leading-edge and our people are talented contributors who bring a passion for what we do",
     img: pic5
 }
+export const reportData = {
+    title: "Link Logistics 2021 ESG Report",
+    desc: "At Link, strong environmental, social and governance (ESG) practices are core to our identity as a firm. Our 2021 ESG report recaps our progress during the calendar year and shows how we will continue to redefine what sustainability looks like in the industrial real estate sector.",
+    btnText: "EXPLORE THE REPORT",
+    img: pic6,
+    imgLoc:'left', 
+    curveLoc:'bottom',
+}
+
+export const bannersData = [
+    {
+        title: "National scale, local service",
+        desc: "Our large footprint in gateway cities, key distribution hubs and high-population growth areas enable us to provide world-class, personalized service throughout the U.S.",
+        btnText: "VIEW OUR PORTFOLIO",
+        img: pic7,
+        imgLoc:'left', 
+        curveLoc:'top',
+    },
+    {
+        title: "Building a satisfying career",
+        desc: "Our commitment to employee well-being, satisfaction and support enables us to attract, develop, inspire and reward great people.",
+        btnText: "VIEW JOB OPENINGS",
+        img: pic8,
+        imgLoc:'right', 
+        curveLoc:'top',
+    },
+    {
+        title: "We design and build warehouses that allow our customers to evolve",
+        desc: "Link seamlessly manages the entire process of delivering facilities that support our customers’ long-term growth strategies.",
+        btnText: "LEARN MORE",
+        img: pic9,
+        imgLoc:'left', 
+        curveLoc:'top',
+    },
+    {
+        title: "From the ground up: a holistic approach to ESG",
+        desc: "Sustainability is built into our foundation. At the heart of everything we do, it drives our commitment to renewable energy, green building technology and carbon neutrality.",
+        btnText: "LEARN MORE",
+        img: pic10,
+        imgLoc:'right', 
+        curveLoc:'bottom',
+    },
+]
