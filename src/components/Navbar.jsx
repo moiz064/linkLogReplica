@@ -10,7 +10,7 @@ const Navbar = () => {
     const [id, setID] = useState()
 
     return (
-        <div >
+        <div className="z-10 xl:fixed w-full">
             <div className='w-full bg-[#96b7c0]'>
                 <nav className='flex py-4 px-[10%] justify-between items-center navbar h-[70px] '>
                     <img src={linklogoblack} alt="logo"
@@ -35,9 +35,9 @@ const Navbar = () => {
                                         className={` h-[10px] ml-[4px] ${nav.subLinks.length !== 0 ? 'flex' : 'hidden'}`}
                                     />
                                 </div>
-                                <div className={`${hovering == true && nav.id == id && nav.subLinks.length !== 0 ? 'flex' : 'hidden'} `}>
+                                <div className={` ${hovering == true && nav.id == id && nav.subLinks.length !== 0 ? 'flex' : 'hidden'} `}>
 
-                                    <ul className='bg-white w-[150px] p-5 absolute'>
+                                    <ul className='bg-white w-[150px] p-5 absolute z-10'>
                                         {nav.subLinks.map((link) => (
                                             <li key={nav.id}>
                                                 <p className="mb-[10px]">{link}</p>

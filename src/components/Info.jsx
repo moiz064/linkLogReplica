@@ -12,7 +12,7 @@ const Info = () => {
                 </button>
             
           </div>
-          <div className='flex-1 overflow-hidden border-[3px] border-b-[0px] sm:border-b-[3px] sm:border-l-[0px]  border-[#cfb380]  rounded-tr-[100px] sm:rounded-tr-none sm:rounded-tl-[100px]' >
+          <div className='flex-1 overflow-hidden border-[3px] border-b-[0px] sm:border-l-[3px] sm:border-r-[0px]  border-[#cfb380]  rounded-tr-[100px] sm:rounded-tr-none sm:rounded-tl-[100px]' >
             <img src={info.img} alt={info.img}
             className='object-cover h-full w-full'
             />
