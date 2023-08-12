@@ -24,6 +24,7 @@ import facebook from './facebook-cardboard.svg'
 import linkedin from './linkedin-cardboard.svg'
 import twitter from './twitter-cardboard.svg'
 import youtube from './youtube-cardboard.svg'
+import conPic1 from './ConPic1.png'
 
 
 
@@ -54,4 +55,5 @@ export {
     linkedin,
     twitter,
     youtube,
+    conPic1
 }

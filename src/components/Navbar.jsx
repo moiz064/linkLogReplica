@@ -27,12 +27,13 @@ const Navbar = () => {
                                 onMouseOut={() => setHovering(false)}
                             >
                                 <div className='flex place-items-center '>
-                                    <a href={`#${nav.id}`}
+                                    <a href={`${nav.id}`}
                                         className="hover:text-[#C45508]">
                                         {nav.title}
                                     </a>
                                     <img src={arrowDown} alt='arrow'
                                         className={` h-[10px] ml-[4px] ${nav.subLinks.length !== 0 ? 'flex' : 'hidden'}`}
+
                                     />
                                 </div>
                                 <div className={` ${hovering == true && nav.id == id && nav.subLinks.length !== 0 ? 'flex' : 'hidden'} `}>

@@ -1,30 +1,25 @@
 import React from 'react'
+import {BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
+
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import NewsCard from './components/NewsCard'
-import Connections from './components/Connections'
-import LinkReport from './components/LinkReport'
-import Banners from './components/Banners'
-import Stats from './components/Stats'
-import RegCards from './components/RegCards'
-import Info from './components/Info'
-import Footer from './components/Footer'
-import NewsBar from './components/NewsBar'
+import Home from './components/Home'
+import ContactPage from './components/ContactPage'
+
 
 const App = () => {
   return (
     <div >
-      <Navbar />
-      <Hero />
-      <NewsCard />
-      <Connections />
-      <LinkReport />
-      <Banners />
-      <Stats />
-      <RegCards />
-      <Info />
-      <NewsBar />
-      <Footer />
+    <Router>
+      <div>
+        <Navbar />
+      </div>
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/contact' element={<ContactPage />} />
+      </Routes>
+    </Router>
+      
+      
     </div>
   )
 }
