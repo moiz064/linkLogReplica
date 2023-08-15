@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 import { linklogoblack, search, arrowDown, menu, close } from "../assets"
 import { navLinks } from '../constants'
 import { useState } from 'react'
@@ -12,14 +14,14 @@ const Navbar = () => {
     return (
         <div className="z-10 xl:fixed w-full">
             <div className='w-full bg-[#96b7c0]'>
-                <nav className='flex py-4 px-[10%] justify-between items-center navbar h-[70px] '>
+                <nav className='flex py-4 xl:px-[120px] md:px-[40px] px-[15px] justify-between items-center navbar '>
                     <img src={linklogoblack} alt="logo"
-                        className='w-[125px]'
+                        className='xl:w-[125px]'
                     />
-                    <ul className='list-none xl:flex hidden justify-end items-center flex-1 '>
+                    <ul className='list-none md:flex hidden justify-end items-center flex-1 '>
                         {navLinks.map((nav, index) => (
                             <li key={nav.id}
-                                className={`font-normal cursor-pointer text-[16px] tracking-widest ${index === navLinks.length - 1 ? 'mr-0' : 'mr-[25px]'}`}
+                                className={`font-normal cursor-pointer text-[13px] lg:text-[16px] tracking-widest ${index === navLinks.length - 1 ? 'mr-0' : 'mr-[25px]'}`}
                                 onMouseOver={() => {
                                     setHovering(true)
                                     setID(nav.id)
@@ -27,12 +29,12 @@ const Navbar = () => {
                                 onMouseOut={() => setHovering(false)}
                             >
                                 <div className='flex place-items-center '>
-                                    <a href={`${nav.id}`}
+                                    <Link to={`${nav.id}`}
                                         className="hover:text-[#C45508]">
                                         {nav.title}
-                                    </a>
+                                    </Link>
                                     <img src={arrowDown} alt='arrow'
-                                        className={` h-[10px] ml-[4px] ${nav.subLinks.length !== 0 ? 'flex' : 'hidden'}`}
+                                        className={` h-[10px] ml-[8px] ${nav.subLinks.length !== 0 ? 'flex' : 'hidden'}`}
 
                                     />
                                 </div>
@@ -52,10 +54,10 @@ const Navbar = () => {
                         ))}
                     </ul>
                     <img src={search} alt="search"
-                        className='w-[25px] ml-10 xl:flex hidden'
+                        className='w-[16px] ml-10 md:flex hidden'
                     />
                     <img src={toggle ? search : menu} alt="menu"
-                        className='w-[25px] ml-10 xl:hidden flex'
+                        className='w-[18px] ml-10 md:hidden flex'
                         onClick={() => setToggle((prev) => !prev)}
                     />
 

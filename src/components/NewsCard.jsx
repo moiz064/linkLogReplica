@@ -3,26 +3,23 @@ import Card from './Card'
 import { news } from '../constants'
 
 const NewsCard = () => (
-  <div className=' mt-[70px]'>
+  <div className='flex flex-col mt-[70px] mx-[50px] lg:mx-[150px]'>
 
+    <h1 className='text-lg md:text-4xl font-medium mb-4'>
+      Latest News
+    </h1>
 
-  <h1 className='flex self-start text-2xl lg:text-4xl font-medium ml-[100px] mb-4'>
-    Latest News</h1>
-
-  <div className='flex flex-col items-center'>
-      <ul className='flex lg:flex-row flex-col '>
+    <div className='flex flex-col items-center'>
+      <ul className='flex md:flex-row flex-col justify-between w-full'>
         {news.map((index) => (
           <li key={index.title} className='mb-[30px]'>
             <Card {...index} />
           </li>
         ))}
       </ul>
-
-
+    </div>
 
   </div>
-
-</div>
 )
 
 export default NewsCard
