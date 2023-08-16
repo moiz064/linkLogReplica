@@ -2,7 +2,7 @@ import React from 'react'
 
 const UserForm = () => {
     return (
-        <div className='py-[50px] mt-[50px] mx-[15px] lg:px-[160px] text-[12px] font-poppins'>
+        <div className='py-[50px] mt-[50px] mx-[15px] lg:px-[110px] text-[12px] font-poppins'>
             <h1 className='text-[26px] sm:text-[38px] pb-[20px] font-thin font-sans border-b-[2px] border-black'>
                 Get in touch with us to learn more
             </h1>

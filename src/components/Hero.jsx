@@ -4,7 +4,7 @@ import { background, herovideo } from '../assets'
 const Hero = () => (
   <div className='relative flex mx-[15px]'
   >
-    <div className='rounded-bl-[120px] overflow-hidden w-full h-[400px] sm:h-[800px] md:h-[580px] lg:h-[800px]'>
+    <div className='rounded-bl-[120px] overflow-hidden w-full h-[400px] sm:h-[520px] d:h-[580px] lg:h-[600px]'>
       <video className='h-full w-full object-cover' src={herovideo} autoPlay loop muted ></video>
 
     </div>

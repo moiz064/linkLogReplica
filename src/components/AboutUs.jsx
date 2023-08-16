@@ -3,7 +3,7 @@ import { aboutUsinfo as info } from '../constants'
 
 const AboutUs = () => {
     return (
-        <div className='flex flex-col sm:flex-row text-sm sm:text-xl font-poppins justify-center mt-[25px] sm:mt-[50px] mx-[15px] lg:mx-[160px]'>
+        <div className='flex flex-col sm:flex-row text-sm sm:text-xl font-poppins justify-center mt-[25px] sm:mt-[50px] mx-[15px] lg:mx-[110px]'>
             <div className='flex-1 border-t-[2px] border-black py-[10px] mb-[10px]  sm:max-w-[400px] text-[12px] sm:text-[16px]'>
                 <h1 className='mb-[6px] tracking-widest sm:font-semibold text-[10.5px] sm:text-[16px]'>{info[0].title}</h1>
                 <h2 className=''>{info[0].address1}</h2>

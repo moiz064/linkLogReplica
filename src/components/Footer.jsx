@@ -10,7 +10,7 @@ import {
 import { navLinks } from '../constants'
 
 const Footer = () => (
-    <div className='bg-[#252429] px-[15px] lg:px-[200px] pt-[20px]'>
+    <div className='bg-[#252429] px-[15px] lg:px-[110px] pt-[20px]'>
         <div className='sm:flex md:min-h-[400px] md:py-[15px]'>
             <div className='sm:flex md:flex-1 flex-col justify-between pt-[20px]'>
 
@@ -31,6 +31,7 @@ const Footer = () => (
                     <div className='grid grid-cols-2 sm:grid-cols-3 grid-rows-4 sm:grid-rows-2 grid-flow-col sm:pl-10 md:pl-0'>
 
                         {navLinks.map((link) => (
+                            
                             <li key={link.id}>
 
                                 <div className='mb-2 mt-10'>

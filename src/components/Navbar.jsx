@@ -14,7 +14,7 @@ const Navbar = () => {
     return (
         <div className="z-10 fixed w-full">
             <div className='w-full bg-[#96b7c0]'>
-                <nav className='flex py-4 xl:px-[160px] md:px-[40px] px-[15px] justify-between items-center navbar '>
+                <nav className='flex py-4 xl:px-[160px] lg:px-[110px] md:px-[40px] px-[15px] justify-between items-center navbar '>
                     <img src={linklogoblack} alt="logo"
                         className='xl:w-[125px]'
                     />

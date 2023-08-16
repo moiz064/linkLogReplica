@@ -2,7 +2,7 @@ import React from 'react'
 import { regionData } from '../constants'
 
 const ConRegions = () => (
-    <div className=' font-poppins mx-[15px] lg:mx-[160px]'>
+    <div className=' font-poppins mx-[15px] lg:mx-[110px]'>
         {regionData.map((region) => (
             <div className='border-t-[2px] border-black pt-[10px] mt-[50px] text-[11px]'>
                 <h1 className='tracking-widest sm:text-[16px] sm:font-medium'>{region.title}</h1>
