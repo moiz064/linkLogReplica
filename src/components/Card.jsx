@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Card = ({ img, title, desc }) => (
-    <div className='flex flex-col md:h-[500px] md:w-[300px] lg:w-[430px]'>
+    <div className='flex flex-col md:h-[500px] md:w-[300px] lg:w-[350px]'>
         <div className='flex-1 w-full bg-[#252429] overflow-hidden border-[3px] border-[#cfb380] xs:max-h-[300px]'>
             <img src={img} alt={img} className='sm:object-cover sm:h-full sm:w-full object-top' />
 

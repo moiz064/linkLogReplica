@@ -3,7 +3,7 @@ import Card from './Card'
 import { news } from '../constants'
 
 const NewsCard = () => (
-  <div className='flex flex-col mt-[70px] mx-[50px] lg:mx-[150px]'>
+  <div className='flex flex-col mt-[70px] mx-[50px] lg:mx-[100px]'>
 
     <h1 className='text-lg md:text-4xl font-medium mb-4'>
       Latest News

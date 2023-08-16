@@ -3,8 +3,8 @@ import RegCard from './RegCard'
 import { regions } from '../constants'
 
 const RegCards = () => (
-    <div className='flex flex-col items-center mt-[70px]'>
-        <ul className='flex lg:flex-row flex-col '>
+    <div className='flex flex-col mt-[70px] mx-[15px] lg:mx-[100px] items-center'>
+        <ul className='flex md:flex-row flex-col justify-between w-full'>
             {regions.map((index) => (
                 <li key={index.title} className='mb-[30px]'>
                     <RegCard {...index} />

@@ -12,7 +12,7 @@ const Navbar = () => {
     const [id, setID] = useState()
 
     return (
-        <div className="z-10 xl:fixed w-full">
+        <div className="z-10 fixed w-full">
             <div className='w-full bg-[#96b7c0]'>
                 <nav className='flex py-4 xl:px-[120px] md:px-[40px] px-[15px] justify-between items-center navbar '>
                     <img src={linklogoblack} alt="logo"
@@ -85,7 +85,7 @@ const Navbar = () => {
                     ))}
                 </ul>
                 <img src={close} alt="close"
-                    className='h-[20px] absolute top-5 right-5'
+                    className='h-[15px] absolute top-5 right-5'
                     onClick={() => setToggle((prev) => !prev)}
                 />
 
