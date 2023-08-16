@@ -9,28 +9,41 @@ import {
 } from '../assets'
 import { navLinks } from '../constants'
 
-const Footer = () => (
-    <div className='bg-[#252429] px-[15px] lg:px-[110px] pt-[20px]'>
-        <div className='sm:flex md:min-h-[400px] md:py-[15px]'>
-            <div className='sm:flex md:flex-1 flex-col justify-between pt-[20px]'>
+const Footer = () => {
+    // const coloums = () => {
+    //     for(let x=0; x < navLinks.length; x+=2){
+    //         <div>
+    //             {(()=>{for(let i = x; i < x + 2 ; i++){
+    //                 <div>
+                        
+    //                 </div>
+    //             }})}
+    //         </div>
+    //     }
+    // }
+    return (
+        <div className='bg-[#252429] px-[15px] lg:px-[110px] pt-[20px]'>
+            <div className='sm:flex md:min-h-[400px] md:py-[15px]'>
+                <div className='sm:flex md:basis-2/5 flex-col justify-between pt-[20px]'>
 
-                <img src={linklogogold} alt="logo" className='w-[180px] md:w-[200px]' />
+                    <img src={linklogogold} alt="logo" className='w-[180px] md:w-[200px]' />
 
-                <div className='flex mt-[20px] h-[40px]'>
-                    <img src={linkedin} alt="logo" className='w-[20px] mr-[12px] md:mr-[25px]' />
-                    <img src={facebook} alt="logo" className='w-[20px] mr-[12px] md:mr-[25px]' />
-                    <img src={instagram} alt="logo" className='w-[20px] mr-[12px] md:mr-[25px]' />
-                    <img src={twitter} alt="logo" className='w-[20px] mr-[12px] md:mr-[25px]' />
-                    <img src={youtube} alt="logo" className='w-[20px]' />
+                    <div className='flex mt-[20px] h-[40px]'>
+                        <img src={linkedin} alt="logo" className='w-[20px] mr-[12px] md:mr-[25px]' />
+                        <img src={facebook} alt="logo" className='w-[20px] mr-[12px] md:mr-[25px]' />
+                        <img src={instagram} alt="logo" className='w-[20px] mr-[12px] md:mr-[25px]' />
+                        <img src={twitter} alt="logo" className='w-[20px] mr-[12px] md:mr-[25px]' />
+                        <img src={youtube} alt="logo" className='w-[20px]' />
+                    </div>
+
                 </div>
 
-            </div>
+                <div className='sm:w-full flex md:basis-3/5'>
+                    <ul className='w-full'>
+                        <div className='grid grid-cols-2 sm:grid-cols-3 grid-rows-4 sm:grid-rows-2 grid-flow-col sm:pl-10 md:pl-0'>
+                            
 
-            <div className='sm:w-full flex md:flex-1'>
-                <ul className='w-full'>
-                    <div className='grid grid-cols-2 sm:grid-cols-3 grid-rows-4 sm:grid-rows-2 grid-flow-col sm:pl-10 md:pl-0'>
-
-                        {navLinks.map((link) => (
+                            {navLinks.map((link) => (
                             
                             <li key={link.id}>
 
@@ -50,18 +63,19 @@ const Footer = () => (
 
                             </li>
                         ))}
-                    </div>
-                </ul>
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div className='border-t-[2px] border-[#cfb380] text-[#cfb380] flex text-xs relative w-full py-5'>
+                <h3 className='mr-[60px]'>Privacy Policy</h3>
+                <h3>Cookie Policy</h3>
+                <h3 className='absolute right-0'>© 2023 Link</h3>
             </div>
 
         </div>
-
-        <div className='border-t-[2px] border-[#cfb380] text-[#cfb380] flex text-xs relative w-full py-5'>
-            <h3 className='mr-[60px]'>Privacy Policy</h3>
-            <h3>Cookie Policy</h3>
-            <h3 className='absolute right-0'>© 2023 Link</h3>
-        </div>
-
-    </div>
-)
+    )
+}
 export default Footer
