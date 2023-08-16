@@ -16,7 +16,6 @@ import NewsBar from './NewsBar'
 import NewsCard from './NewsCard'
 import RegCard from './RegCard'
 import RegCards from './RegCards'
-import regionCard from './regionCard'
 import Stats from './Stats'
 import UserForm from './UserForm'
 
@@ -39,7 +38,6 @@ export {
     NewsCard,
     RegCard,
     RegCards,
-    regionCard,
     Stats,
     UserForm,
 }

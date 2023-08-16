@@ -12,7 +12,7 @@ const Navbar = () => {
     const [id, setID] = useState()
 
     return (
-        <div className="z-10 fixed w-full">
+        <div className="z-10 fixed w-full font-poppins">
             <div className='w-full bg-[#96b7c0]'>
                 <nav className='flex py-4 xl:px-[160px] lg:px-[110px] md:px-[40px] px-[15px] justify-between items-center navbar '>
                     <img src={linklogoblack} alt="logo"

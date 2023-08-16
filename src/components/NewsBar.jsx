@@ -3,7 +3,7 @@ import { news } from '../constants'
 
 const NewsBar = () => {
     return (
-        <div className='my-[40px] mx-[15px] lg:mx-[110px] bg-[#252429] py-[20%] sm:py-[10%] xl:mx-[200px] px-[10%] sm:px-[5%] text-[#cfb380] rounded-br-[150px] relative'>
+        <div className='mt-[70px] mb-[60px] mx-[15px] lg:mx-[110px] bg-[#252429] py-[20%] sm:py-[10%] xl:mx-[200px] px-[10%] sm:px-[5%] text-[#cfb380] rounded-br-[150px] relative'>
             <h1 className='text-3xl sm:text-5xl mb-[15px]'>Latest News</h1>
             <div className='mb-[30px] sm:flex'>
                 {news.map((index) => (

@@ -3,7 +3,7 @@ import { info } from '../constants'
 
 const Info = () => {
   return (
-    <div className='flex flex-col-reverse sm:flex-row-reverse mx-[15px] lg:mx-[110px] xl:mx-[200px] my-[10px] h-[450px] sm:h-[350px]  rounded-tl-[100px]'>
+    <div className='flex flex-col-reverse sm:flex-row-reverse mx-[15px] lg:mx-[110px] xl:mx-[200px] my-[90px] h-[450px] sm:h-[350px]  rounded-tl-[100px]'>
       
       <div className='relative flex-1 flex-wrap p-[10px] sm:px-[20px] sm:py-[50px] border-[3px] bg-[#96b7c0] border-[#cfb380]  sm:rounded-tr-[100px]'>
         
