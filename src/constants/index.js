@@ -167,13 +167,14 @@ export const info = {
 export const aboutUsinfo = [
     {
         title: "HEADQUARTERS",
-        address: "90 Park Ave, 32nd Floor New York, NY 10016",
+        address1: "90 Park Ave, 32nd", 
+        address2: "Floor New York, NY 10016",
         phNo: "+1 212-297-1000",
         fax: "+1 212-297-1091",
 
     },
     {
-        title:"Media",
+        title:"MEDIA",
         desc: "If you are a member of the press, please direct inquiries to:",
         email1: "msachs@linklogistics.com",
         email2: "LinkLogistics@fgsglobal.com."

@@ -2,13 +2,13 @@ import React from 'react'
 import { regionData } from '../constants'
 
 const ConRegions = () => (
-    <div className='sm:px-[50px]'>
+    <div className=' font-poppins mx-[15px] lg:mx-[160px]'>
         {regionData.map((region) => (
-            <div className='border-t-[3px] border-black mx-[10px] pt-[10px] mt-[50px]'>
-                <h1 className='tracking-widest md:text-xl font-semibold'>{region.title}</h1>
-                <div className='md:flex flex-col items-center'>
-                    <ul>
-                        <div className='md:grid grid-cols-3 md:text-2xl md:max-w-[900px]'>
+            <div className='border-t-[2px] border-black pt-[10px] mt-[50px] text-[11px]'>
+                <h1 className='tracking-widest sm:text-[16px] sm:font-medium'>{region.title}</h1>
+                <div className='sm:flex flex-col items-center'>
+                    <ul className='w-full'>
+                        <div className='sm:grid grid-cols-3 sm:text-[16px] gap-x-[20px] w-full'>
                             {region.locations.map((loc) => (
                                 <li>
                                     <div className='mt-[20px]'>

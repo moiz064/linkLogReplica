@@ -3,7 +3,7 @@ import { stats } from '../constants'
 
 const Stats = () => {
     return (
-        <div className='w-full  bg-[#fae7be] my-[50px] px-[30px] lg:px-[100px] py-[10px] sm:py-[90px]'>
+        <div className='w-full  bg-[#DEC7AC] my-[50px] px-[30px] lg:px-[100px] py-[10px] sm:py-[90px]'>
             <h1 className='text-3xl sm:text-5xl font-light mb-[50px]'>Link Logistics by the numbers</h1>
 
             <div className='w-full flex flex-col sm:flex-row justify-center'>

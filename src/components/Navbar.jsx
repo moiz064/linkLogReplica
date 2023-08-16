@@ -14,14 +14,14 @@ const Navbar = () => {
     return (
         <div className="z-10 fixed w-full">
             <div className='w-full bg-[#96b7c0]'>
-                <nav className='flex py-4 xl:px-[120px] md:px-[40px] px-[15px] justify-between items-center navbar '>
+                <nav className='flex py-4 xl:px-[160px] md:px-[40px] px-[15px] justify-between items-center navbar '>
                     <img src={linklogoblack} alt="logo"
                         className='xl:w-[125px]'
                     />
                     <ul className='list-none md:flex hidden justify-end items-center flex-1 '>
                         {navLinks.map((nav, index) => (
                             <li key={nav.id}
-                                className={`font-normal cursor-pointer text-[13px] lg:text-[16px] tracking-widest ${index === navLinks.length - 1 ? 'mr-0' : 'mr-[25px]'}`}
+                                className={`font-normal cursor-pointer text-[12px] tracking-widest ${index === navLinks.length - 1 ? 'mr-0' : 'mr-[25px]'}`}
                                 onMouseOver={() => {
                                     setHovering(true)
                                     setID(nav.id)
